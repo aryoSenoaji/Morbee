@@ -1,0 +1,20 @@
+Rizwar
+Main Menu
+Checkpoint
+Retry
+UI Inventory
+UI Ingame
+Sound
+
+Aryo
+Dialogue
+Map
+Cutscenes
+Movement
+Interact Object 
+Collect Item (Inventory)
+
+bareng-bareng
+puzzle
+
+Save manual apa checkpoint??
