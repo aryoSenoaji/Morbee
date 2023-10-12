@@ -12,13 +12,13 @@ public class NpcMovement : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        patrolPoints = new Vector2[4];
+        patrolPoints = new Vector2[2];
 
-        // make point for patrol
-        patrolPoints[0] = new Vector2(transform.position.x, transform.position.y + 2.0f); // up
-        patrolPoints[1] = new Vector2(transform.position.x, transform.position.y - 2.0f); // down
-        patrolPoints[2] = new Vector2(transform.position.x - 2.0f, transform.position.y); // left
-        patrolPoints[3] = new Vector2(transform.position.x + 2.0f, transform.position.y); // right
+        // set patrol points for each direction
+        //patrolPoints[0] = new Vector2(transform.position.x, transform.position.y + 2.0f); // up
+        //patrolPoints[1] = new Vector2(transform.position.x, transform.position.y - 2.0f); // down
+        patrolPoints[0] = new Vector2(transform.position.x - 2.0f, transform.position.y); // left
+        patrolPoints[1] = new Vector2(transform.position.x + 2.0f, transform.position.y); // right
     }
 
     void Update()
@@ -46,6 +46,6 @@ public class NpcMovement : MonoBehaviour
     {
         Vector2 moveDirection = (patrolPoints[currentPatrolIndex] - (Vector2)transform.position).normalized;
         animator.SetFloat("Horizontal", moveDirection.x);
-        animator.SetFloat("Vertical", moveDirection.y);
+        //animator.SetFloat("Vertical", moveDirection.y);
     }
 }
