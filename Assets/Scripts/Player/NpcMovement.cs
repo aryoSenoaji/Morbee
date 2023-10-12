@@ -4,36 +4,44 @@ using UnityEngine;
 
 public class NpcMovement : MonoBehaviour
 {
-    public float moveSpeed = 2.0f; // Kecepatan gerakan musuh
-    private Vector2 initialPosition; // Posisi awal musuh
-    private bool movingRight = true; // Apakah musuh bergerak ke kanan
+    public float moveSpeed = 2.0f;
+    private Animator animator;
+    private Vector2[] patrolPoints;
+    private int currentPatrolIndex = 0;
 
     void Start()
     {
-        initialPosition = transform.position;
+        animator = GetComponent<Animator>();
+        patrolPoints = new Vector2[4];
+        patrolPoints[0] = transform.position + Vector3.up; // up
+        patrolPoints[1] = transform.position + Vector3.down; // down
+        patrolPoints[2] = transform.position + Vector3.left; // left
+        patrolPoints[3] = transform.position + Vector3.right; // right
     }
 
     void Update()
     {
-        if (movingRight)
+        Patrol();
+    }
+
+    void Patrol()
+    {
+        Vector2 targetPosition = patrolPoints[currentPatrolIndex];
+
+        if (Vector2.Distance(transform.position, targetPosition) < 0.1f)
         {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-            transform.localScale = new Vector2(-1, 1); // Flip sprite jika bergerak ke kanan
-        }
-        else
-        {
-            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
-            transform.localScale = new Vector2(1, 1); // Kembalikan sprite jika bergerak ke kiri
+            currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
+            targetPosition = patrolPoints[currentPatrolIndex];
         }
 
-        if (transform.position.x >= initialPosition.x + 2.0f) // Atur jarak patroli
-        {
-            movingRight = false;
-        }
+        Vector2 moveDirection = (targetPosition - (Vector2)transform.position).normalized;
+        transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
+        UpdateAnimator(moveDirection);
+    }
 
-        if (transform.position.x <= initialPosition.x - 2.0f) // Atur jarak patroli
-        {
-            movingRight = true;
-        }
+    void UpdateAnimator(Vector2 moveDirection)
+    {
+        animator.SetFloat("Horizontal", moveDirection.x);
+        animator.SetFloat("Vertical", moveDirection.y);
     }
 }
