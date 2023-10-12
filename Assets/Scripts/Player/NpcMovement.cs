@@ -14,7 +14,7 @@ public class NpcMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         patrolPoints = new Vector2[2];
 
-        // set patrol points for each direction
+        //set patrol points for each direction
         //patrolPoints[0] = new Vector2(transform.position.x, transform.position.y + 2.0f); // up
         //patrolPoints[1] = new Vector2(transform.position.x, transform.position.y - 2.0f); // down
         patrolPoints[0] = new Vector2(transform.position.x - 2.0f, transform.position.y); // left
