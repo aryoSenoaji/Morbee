@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 104698107}
   - component: {fileID: 104698108}
   - component: {fileID: 104698109}
+  - component: {fileID: 104698110}
   m_Layer: 0
   m_Name: MCHouse
   m_TagString: Untagged
@@ -497,8 +498,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -786199541
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 50b5b35d8aa6b0b4eb026c21735efcaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -564,6 +565,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!210 &104698110
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104698106}
+  m_Enabled: 1
+  m_SortingLayerID: -786199541
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1001 &108190167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1226,6 +1239,7 @@ GameObject:
   - component: {fileID: 406570717}
   - component: {fileID: 406570718}
   - component: {fileID: 406570719}
+  - component: {fileID: 406570720}
   m_Layer: 0
   m_Name: House1
   m_TagString: Untagged
@@ -1286,8 +1300,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -786199541
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 82405c3003c0a12458a3f48989bb051b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1350,6 +1364,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!210 &406570720
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406570716}
+  m_Enabled: 1
+  m_SortingLayerID: -786199541
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1001 &407741896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2786,8 +2812,9 @@ GameObject:
   - component: {fileID: 1183850312}
   - component: {fileID: 1183850314}
   - component: {fileID: 1183850313}
+  - component: {fileID: 1183850315}
   m_Layer: 0
-  m_Name: House1 (1)
+  m_Name: House2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2896,8 +2923,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -786199541
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2152957938f7fa8409e5cc2f3e8289c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2910,6 +2937,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!210 &1183850315
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183850311}
+  m_Enabled: 1
+  m_SortingLayerID: -786199541
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1001 &1187050766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12412,8 +12451,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1644865815}
-  - {fileID: 104698107}
   - {fileID: 1792484760}
+  - {fileID: 104698107}
   m_Father: {fileID: 1705608519}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1498732702
@@ -12460,8 +12499,9 @@ GameObject:
   - component: {fileID: 1603868066}
   - component: {fileID: 1603868068}
   - component: {fileID: 1603868067}
+  - component: {fileID: 1603868069}
   m_Layer: 0
-  m_Name: House1 (2)
+  m_Name: House3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12570,8 +12610,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -786199541
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 948c5ab6acfdcb045be696f8fb77c299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12584,6 +12624,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!210 &1603868069
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603868065}
+  m_Enabled: 1
+  m_SortingLayerID: -786199541
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1 &1640870755
 GameObject:
   m_ObjectHideFlags: 0
@@ -12627,6 +12679,7 @@ GameObject:
   - component: {fileID: 1644865815}
   - component: {fileID: 1644865816}
   - component: {fileID: 1644865817}
+  - component: {fileID: 1644865818}
   m_Layer: 0
   m_Name: Clinic
   m_TagString: Untagged
@@ -12687,8 +12740,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -786199541
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 20c5cd84acb784840b531a765fd5d193, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12746,6 +12799,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.480986, y: 1.8969364}
   m_EdgeRadius: 0
+--- !u!210 &1644865818
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644865814}
+  m_Enabled: 1
+  m_SortingLayerID: -786199541
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1001 &1650062116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13476,6 +13541,7 @@ GameObject:
   - component: {fileID: 1792484760}
   - component: {fileID: 1792484761}
   - component: {fileID: 1792484762}
+  - component: {fileID: 1792484763}
   m_Layer: 0
   m_Name: HeadVillageHouse
   m_TagString: Untagged
@@ -13536,8 +13602,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -786199541
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f921548d3585d61419ee8c660c58cc72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13610,6 +13676,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!210 &1792484763
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792484759}
+  m_Enabled: 1
+  m_SortingLayerID: -786199541
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1001 &1815406372
 PrefabInstance:
   m_ObjectHideFlags: 0
