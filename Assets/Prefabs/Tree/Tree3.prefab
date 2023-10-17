@@ -87,8 +87,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5221463672425813730}
   - component: {fileID: 237170192099133485}
-  - component: {fileID: 4445349671632956458}
-  - component: {fileID: 3631289742116225590}
+  - component: {fileID: 4263560344300118254}
+  - component: {fileID: 3089642703267755036}
   m_Layer: 0
   m_Name: Tree3
   m_TagString: Obstacle
@@ -150,8 +150,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -786199541
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26afff0a40b3925468ef1295877c1075, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -164,89 +164,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &4445349671632956458
-PolygonCollider2D:
+--- !u!210 &4263560344300118254
+SortingGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353775717609321029}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5014943, y: 0.10262742}
-    oldSize: {x: 7.68, y: 7.8}
-    newSize: {x: 8, y: 8.1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.4783701, y: 2.2230437}
-      - {x: 2.20837, y: 1.6330438}
-      - {x: 2.41837, y: 1.5730438}
-      - {x: 3.3183699, y: 2.2030437}
-      - {x: 3.41837, y: 2.4730437}
-      - {x: 3.35837, y: 2.7730439}
-      - {x: 3.43837, y: 2.8630438}
-      - {x: 3.3183699, y: 3.0030437}
-      - {x: 3.34837, y: 3.3130438}
-      - {x: 3.51837, y: 3.8730438}
-      - {x: 3.48837, y: 5.633044}
-      - {x: 2.0483701, y: 6.843044}
-      - {x: 1.7383701, y: 7.263044}
-      - {x: 1.66837, y: 6.9630437}
-      - {x: 1.58837, y: 7.1830435}
-      - {x: 0.67837006, y: 7.2930436}
-      - {x: -1.9216299, y: 7.033044}
-      - {x: -3.0516298, y: 6.0030437}
-      - {x: -3.2816298, y: 5.6530437}
-      - {x: -3.2816298, y: 4.053044}
-      - {x: -3.2216299, y: 3.8130438}
-      - {x: -3.2416298, y: 3.6230438}
-      - {x: -3.2416298, y: 2.8730438}
-      - {x: -3.16163, y: 2.6430438}
-      - {x: -2.7116299, y: 2.0130439}
-      - {x: -2.65163, y: 1.8830438}
-      - {x: -2.68163, y: 1.7930437}
-      - {x: -2.4816298, y: 1.6930438}
-      - {x: -2.42163, y: 1.3930438}
-      - {x: -1.0616299, y: 0.12304382}
-      - {x: -0.81162995, y: 0.09304382}
-      - {x: -0.6616299, y: 0.08304382}
-      - {x: 0.50837004, y: 0.0030438232}
-      - {x: 0.68837005, y: 0.3730438}
-      - {x: 1.30837, y: 0.013043823}
-      - {x: 0.74837005, y: 1.7830437}
-  m_UseDelaunayMesh: 0
---- !u!70 &3631289742116225590
-CapsuleCollider2D:
+  m_Enabled: 1
+  m_SortingLayerID: -786199541
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
+--- !u!61 &3089642703267755036
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -277,6 +208,16 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08431617, y: 0.15018661}
-  m_Size: {x: 1.074356, y: 1.074356}
-  m_Direction: 0
+  m_Offset: {x: 0.12275523, y: -0.19247794}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.18}
+    oldSize: {x: 7.68, y: 7.8}
+    newSize: {x: 8, y: 8.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.2594657, y: 0.24148947}
+  m_EdgeRadius: 0
