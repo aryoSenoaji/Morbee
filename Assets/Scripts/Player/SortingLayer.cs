@@ -20,7 +20,7 @@ public class SortingLayer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Obstacle") 
+        if (collision.tag == "Obstacle")
         {
             parentRenderer.sortingOrder = collision.GetComponent<SpriteRenderer>().sortingOrder + 1;
         }
