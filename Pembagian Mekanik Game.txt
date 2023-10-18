@@ -1,20 +1,19 @@
 Rizwar
-Main Menu
+Main Menu (SUDAH)
 Checkpoint
 Retry
 UI Inventory
 UI Ingame
 Sound
+Enemy & Attack System
 
 Aryo
 Dialogue
-Map
+Map (sisa map top, down, didalam rumah)
 Cutscenes
-Movement
+Movement (SUDAH)
 Interact Object 
-Collect Item (Inventory)
+Collect Item & Inventory
 
-bareng-bareng
-puzzle
-
-Save manual apa checkpoint??
+NOTE*
+input sistem sudah menggunakan input sistem baru
