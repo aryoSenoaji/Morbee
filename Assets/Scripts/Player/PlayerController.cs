@@ -1,36 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    public float moveSpeed = 5f;
+    public float moveSpeed = 2f;
 
     public Rigidbody2D rb;
     public Animator animator;
-    
+
     Vector2 movement;
 
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement.x = InputSystem.GetDevice<Keyboard>().dKey.ReadValue() - InputSystem.GetDevice<Keyboard>().aKey.ReadValue();
+        movement.y = InputSystem.GetDevice<Keyboard>().wKey.ReadValue() - InputSystem.GetDevice<Keyboard>().sKey.ReadValue();
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1 )
+        if (movement.x == 1 || movement.x == -1 || movement.y == 1 || movement.y == -1)
         {
-            animator.SetFloat("LastMoveHorizontal", Input.GetAxisRaw("Horizontal"));
-            animator.SetFloat("LastMoveVertical", Input.GetAxisRaw("Vertical"));
+            animator.SetFloat("LastMoveHorizontal", movement.x);
+            animator.SetFloat("LastMoveVertical", movement.y);
         }
     }
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * movement);
     }
 }
