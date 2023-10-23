@@ -33,18 +33,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "InteractObject",
+                    "name": "InventoryBook",
                     "type": "Button",
-                    "id": "47d7e837-ff3b-4ebd-8572-7d178a814b18",
+                    "id": "2d79eef3-6130-418d-beeb-2e457cf0706f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "InventoryBook",
+                    "name": "InteractObject",
                     "type": "Button",
-                    "id": "2d79eef3-6130-418d-beeb-2e457cf0706f",
+                    "id": "47d7e837-ff3b-4ebd-8572-7d178a814b18",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
