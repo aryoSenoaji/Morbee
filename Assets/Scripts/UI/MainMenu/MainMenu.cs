@@ -9,11 +9,17 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync(1);
+        Time.timeScale = 1.0f;
+    }
+
+    public void BackHome()
+    {
+        SceneManager.LoadSceneAsync(0);
     }
 
     public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("Aplikasi Telah Keluar");
+        Debug.Log("Game is Closed");
     }
 }
