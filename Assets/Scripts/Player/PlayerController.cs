@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -36,8 +37,11 @@ public class PlayerController : MonoBehaviour
     {
         rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * movement);
     }
+
 }
 
+
+// in this below script before using the movement new input system key binding
 //public class PlayerController : MonoBehaviour
 //{
 //    public float moveSpeed = 2f;
@@ -56,6 +60,8 @@ public class PlayerController : MonoBehaviour
 //        animator.SetFloat("Horizontal", movement.x);
 //        animator.SetFloat("Vertical", movement.y);
 //        animator.SetFloat("Speed", movement.sqrMagnitude);
+
+//        Debug.Log("Movement Vector: " + movement);
 
 //        if (movement.x == 1 || movement.x == -1 || movement.y == 1 || movement.y == -1)
 //        {
