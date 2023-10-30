@@ -16835,8 +16835,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3079105851132186245, guid: 83891c9fef032a94ea4f0521de19fa33, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3081377909020354128}
   m_SourcePrefab: {fileID: 100100000, guid: 83891c9fef032a94ea4f0521de19fa33, type: 3}
+--- !u!1 &3081377909020354127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3079105851132186245, guid: 83891c9fef032a94ea4f0521de19fa33, type: 3}
+  m_PrefabInstance: {fileID: 3081377909020354126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3081377909020354128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3081377909020354127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eedd349621ecc049aefb9ee7e07c019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 0
+  firePoint: {fileID: 0}
+  fireballs: []
 --- !u!1001 &4092622560209521580
 PrefabInstance:
   m_ObjectHideFlags: 0
