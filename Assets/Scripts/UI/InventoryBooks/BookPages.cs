@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,20 @@ public class BookPages : MonoBehaviour
     [SerializeField]
     private RectTransform spicesPanel;
 
+    [SerializeField]
+    private BookItemDescription itemDescription;
+
     List<BookItems> listOfUISpices = new List<BookItems>();
+
+    public Sprite image;
+    public int quantity;
+    public string description;
+
+    private void Awake()
+    {
+        Hide();
+        itemDescription.ResetDescription();
+    }
 
     public void InitializeBookUI(int booksize)
     {
@@ -24,6 +38,7 @@ public class BookPages : MonoBehaviour
     public void Show()
     {
         gameObject.SetActive(true);
+        itemDescription.ResetDescription();
     }
 
     public void Hide()
