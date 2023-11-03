@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 5579493953753857457}
   - component: {fileID: 2751997568795662839}
   - component: {fileID: 5760114854967141630}
+  - component: {fileID: 596074835898657217}
   m_Layer: 5
   m_Name: SpicesContent
   m_TagString: Untagged
@@ -305,10 +306,10 @@ RectTransform:
   - {fileID: 2153997868376209191}
   m_Father: {fileID: 4158598657614419617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 985, y: -20}
-  m_SizeDelta: {x: 630, y: 740}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &2751997568795662839
 CanvasRenderer:
@@ -348,6 +349,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &596074835898657217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4049667681514421075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46d6b71936d9984181607ae23b66d7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemImage: {fileID: 4101290624035151768}
+  description: {fileID: 555485539486325752}
 --- !u!1 &5211632647007010642
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,7 +482,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spicesPrefab: {fileID: 7363093290857442928, guid: 29ee8d6c08b19df4aaa8c5e7f8aea6d1, type: 3}
   spicesPanel: {fileID: 5579493953753857457}
-  itemDescription: {fileID: 7086858316628386086}
+  itemDescription: {fileID: 596074835898657217}
+  image: {fileID: 0}
+  quantity: 0
+  description: 
 --- !u!1 &6140721819658753198
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,10 +520,10 @@ RectTransform:
   - {fileID: 2972636385196259329}
   m_Father: {fileID: 4158598657614419617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 335, y: -390}
-  m_SizeDelta: {x: 630, y: 740}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &236850469041842240
 CanvasRenderer:
@@ -1081,10 +1099,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 874113208168467047, guid: 29ee8d6c08b19df4aaa8c5e7f8aea6d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7086858316628386086}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29ee8d6c08b19df4aaa8c5e7f8aea6d1, type: 3}
 --- !u!114 &555485539486325752 stripped
 MonoBehaviour:
@@ -1097,25 +1112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1288082015545664563 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 874113208168467047, guid: 29ee8d6c08b19df4aaa8c5e7f8aea6d1, type: 3}
-  m_PrefabInstance: {fileID: 2144090074624618068}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7086858316628386086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288082015545664563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f46d6b71936d9984181607ae23b66d7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemImage: {fileID: 4101290624035151768}
-  description: {fileID: 555485539486325752}
 --- !u!114 &4101290624035151768 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2678481277823332812, guid: 29ee8d6c08b19df4aaa8c5e7f8aea6d1, type: 3}
