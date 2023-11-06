@@ -24,22 +24,13 @@ public class BookPages : MonoBehaviour
     private void Awake()
     {
         Hide();
-        itemDescription.ResetDescription();
-    }
-
-    public void InitializeBookUI(int booksize)
-    {
-        for (int i = 0; i < booksize; i++) {
-            BookItems uiSpices = Instantiate(spicesPrefab, Vector3.zero, Quaternion.identity);
-            uiSpices.transform.SetParent(spicesPanel);
-            listOfUISpices.Add(uiSpices);
-        }
+        //itemDescription.ResetDescription();
     }
 
     public void Show()
     {
         gameObject.SetActive(true);
-        itemDescription.ResetDescription();
+        //itemDescription.ResetDescription();
     }
 
     public void Hide()
@@ -47,3 +38,14 @@ public class BookPages : MonoBehaviour
         gameObject.SetActive(false);
     }
 }
+
+// script lama dari tutor sunny valley
+//public void InitializeBookUI(int booksize)
+//{
+//    for (int i = 0; i < booksize; i++)
+//    {
+//        BookItems uiSpices = Instantiate(spicesPrefab, Vector3.zero, Quaternion.identity);
+//        uiSpices.transform.SetParent(spicesPanel);
+//        listOfUISpices.Add(uiSpices);
+//    }
+//}

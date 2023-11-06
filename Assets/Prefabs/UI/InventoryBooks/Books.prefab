@@ -382,7 +382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4158598657614419617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -984,6 +984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpicesUi
       objectReference: {fileID: 0}
+    - target: {fileID: 2678481277823332812, guid: 29ee8d6c08b19df4aaa8c5e7f8aea6d1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3109494498364253299, guid: a281f8ea6b9ba5f4e9a1b6d4ffbe2b81, type: 3}
     - target: {fileID: 3785011066455487852, guid: 29ee8d6c08b19df4aaa8c5e7f8aea6d1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
