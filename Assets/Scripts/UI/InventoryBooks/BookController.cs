@@ -1,29 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class BookController : MonoBehaviour
 {
     [SerializeField]
-    private BookPages bookUI;
+    private BookInventory bookUI;
 
-    private InputAction toggleBookAction;
-
-    private void OnEnable()
+    private void Update()
     {
-        toggleBookAction = new InputAction(binding: "<Keyboard>/i");
-        toggleBookAction.Enable();
-        toggleBookAction.started += ToggleBook;
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            ToggleBook();
+        }
     }
 
-    private void OnDisable()
-    {
-        toggleBookAction.Disable();
-        toggleBookAction.started -= ToggleBook;
-    }
-
-    private void ToggleBook(InputAction.CallbackContext context)
+    private void ToggleBook()
     {
         if (bookUI.isActiveAndEnabled == false)
         {

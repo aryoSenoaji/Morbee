@@ -1,13 +1,11 @@
-using JetBrains.Annotations;
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
-public class BookItems : MonoBehaviour
+[CreateAssetMenu(fileName = "ItemName", menuName = "BookPage/CreateSpices", order = 1)]
+
+public class BookItem : ScriptableObject
 {
-    
+    public string spiceName;
+    public Sprite spiceImage;
 }
