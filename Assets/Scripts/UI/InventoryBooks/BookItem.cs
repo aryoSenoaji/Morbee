@@ -7,5 +7,6 @@ using UnityEngine;
 public class BookItem : ScriptableObject
 {
     public string spiceName;
+    public string description;
     public Sprite spiceImage;
 }
