@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Rose
   m_EditorClassIdentifier: 
   spiceName: Rose
+  description: ini bunga rose
   spiceImage: {fileID: 21300000, guid: fbb34f7941aed534390756dc96d980d9, type: 3}
