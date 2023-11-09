@@ -6879,7 +6879,7 @@ Transform:
   m_GameObject: {fileID: 363398220}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.74, y: -1.76, z: -0.3}
+  m_LocalPosition: {x: -2.72, y: -1.53, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6912,7 +6912,7 @@ GameObject:
   - component: {fileID: 510142225}
   - component: {fileID: 510142226}
   m_Layer: 0
-  m_Name: Env_Props_KesetKecil
+  m_Name: Env_Props_SmallMat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7879,7 +7879,7 @@ GameObject:
   - component: {fileID: 857993044}
   - component: {fileID: 857993045}
   m_Layer: 0
-  m_Name: Env_Props_Keset
+  m_Name: Env_Props_Mat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7964,7 +7964,7 @@ GameObject:
   - component: {fileID: 877527776}
   - component: {fileID: 877527777}
   m_Layer: 0
-  m_Name: Env_Props_MejaMakan
+  m_Name: Env_Props_DiningTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8099,7 +8099,7 @@ GameObject:
   - component: {fileID: 1279634600}
   - component: {fileID: 1279634601}
   m_Layer: 0
-  m_Name: Env_Props_MejaKecil
+  m_Name: Env_Props_SmallTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8267,7 +8267,7 @@ GameObject:
   - component: {fileID: 1390564623}
   - component: {fileID: 1390564624}
   m_Layer: 0
-  m_Name: Env_Props_Kulkas
+  m_Name: Env_Props_Refrigerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8396,7 +8396,7 @@ GameObject:
   - component: {fileID: 1499707014}
   - component: {fileID: 1499707015}
   m_Layer: 0
-  m_Name: Env_Props_KesetBesar
+  m_Name: Env_Props_LargeMat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8785,11 +8785,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 753232554308152539, guid: 83891c9fef032a94ea4f0521de19fa33, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.73
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 753232554308152539, guid: 83891c9fef032a94ea4f0521de19fa33, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.65
+      value: -1.55
       objectReference: {fileID: 0}
     - target: {fileID: 753232554308152539, guid: 83891c9fef032a94ea4f0521de19fa33, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8844,7 +8844,7 @@ GameObject:
   - component: {fileID: 2144365961}
   - component: {fileID: 2144365962}
   m_Layer: 0
-  m_Name: Env_Props_Wastafel
+  m_Name: Env_Props_Sink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
