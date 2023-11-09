@@ -240,4 +240,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae60c5c21daf1f344a3daa0b1c4ce66d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookUI: {fileID: 0}
+  bookUI: {fileID: 5542278563731822566, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
