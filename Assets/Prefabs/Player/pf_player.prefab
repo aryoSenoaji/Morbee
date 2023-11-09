@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4231060563435124365}
   m_Layer: 0
   m_Name: pf_player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,4 +241,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookUI: {fileID: 0}
-  bookSize: 3
