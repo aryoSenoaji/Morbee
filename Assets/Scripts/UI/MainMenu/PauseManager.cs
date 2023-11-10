@@ -1,32 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PauseManager : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenuUI;
 
-
-    private InputAction pauseMenu;
-
     private bool isPaused;
 
-
-    private void OnEnable()
+    private void Update()
     {
-        pauseMenu = new InputAction(binding: "<Keyboard>/Escape");
-        pauseMenu.Enable();
-        pauseMenu.started += Pause;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePause();
+        }
     }
 
-    private void OnDisable()
-    {
-        pauseMenu.Disable();
-        pauseMenu.started -= Pause;
-    }
-
-    private void Pause(InputAction.CallbackContext context)
+    private void TogglePause()
     {
         if (!isPaused)
         {
