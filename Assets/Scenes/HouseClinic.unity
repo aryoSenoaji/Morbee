@@ -9190,6 +9190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pf_player
       objectReference: {fileID: 0}
+    - target: {fileID: 4231060563435124365, guid: 83891c9fef032a94ea4f0521de19fa33, type: 3}
+      propertyPath: bookUI
+      value: 
+      objectReference: {fileID: 5542278563731822566, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
