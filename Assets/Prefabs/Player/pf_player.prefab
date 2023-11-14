@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8790407927003936394}
   - component: {fileID: 5233050779889963177}
   - component: {fileID: 4231060563435124365}
+  - component: {fileID: 312934645413526526}
   m_Layer: 0
   m_Name: pf_player
   m_TagString: Player
@@ -209,4 +210,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae60c5c21daf1f344a3daa0b1c4ce66d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookUI: {fileID: 5542278563731822566, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
+  bookUI: {fileID: 0}
+--- !u!114 &312934645413526526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3079105851132186245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eedd349621ecc049aefb9ee7e07c019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 0
+  firePoint: {fileID: 0}
+  fireballs: []
+  anim: {fileID: 8790407927003936394}
+  rb: {fileID: 109976462664073775}

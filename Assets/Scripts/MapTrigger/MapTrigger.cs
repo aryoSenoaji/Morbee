@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MapTrigger : MapLoader
 {
-    [SerializeField] private string mapName;
-    private void OnTriggerEnter2D(Collider2D collision)
+    [SerializeField] public string mapName;
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.CompareTag("Player"))
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
-            LoadMap(mapName);
+            SceneManager.LoadScene(mapName);
         }
     }
 }
