@@ -1,19 +1,16 @@
 Rizwar
 Main Menu (SUDAH)
-Checkpoint
-Retry
-UI Inventory
-UI Ingame
+UI Ingame (SUDAH)
 Sound
 Enemy & Attack System
 
 Aryo
 Dialogue
-Map (sisa map top, down, didalam rumah)
+Map (sisa top & down)
 Cutscenes
 Movement (SUDAH)
-Interact Object 
-Collect Item & Inventory
+Interact Object (SUDAH)
+Collect Item & Inventory (SUDAH)
 
 NOTE*
-input sistem sudah menggunakan input sistem baru
+input sistem menggunakan yang baru dan yang lama
