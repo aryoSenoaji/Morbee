@@ -8,6 +8,7 @@ public class InputManager : MonoBehaviour
     public PauseManager pauseManager;
     public BookController bookController;
     public Interaction interaction;
+    public bool submitPressed = false;
 
     void Update()
     {
@@ -15,6 +16,7 @@ public class InputManager : MonoBehaviour
         HandlePauseInput();
         HandleBookInput();
         HandleInteractionInput();
+        HandleSubmitInput();
     }
 
     void HandlePlayerInput()
@@ -51,4 +53,18 @@ public class InputManager : MonoBehaviour
             }
         }
     }
+
+    void HandleSubmitInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            submitPressed = true;
+        }
+        else
+        {
+            submitPressed = false;
+        }
+    }
+
+
 }
