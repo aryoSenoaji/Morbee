@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NpcMovement : MonoBehaviour
+public class NpcMovement2 : MonoBehaviour
 {
     public float moveSpeed = 2.0f;
     private Animator animator;
@@ -54,6 +54,6 @@ public class NpcMovement : MonoBehaviour
     {
         Vector2 moveDirection = ((Vector2)patrolPoints[currentPatrolIndex].position - (Vector2)transform.position).normalized;
         animator.SetFloat("Horizontal", moveDirection.x);
-        //animator.SetFloat("Vertical", moveDirection.y);
+        animator.SetFloat("Vertical", moveDirection.y);
     }
 }

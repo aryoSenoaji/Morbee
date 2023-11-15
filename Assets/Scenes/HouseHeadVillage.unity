@@ -9920,6 +9920,7 @@ MonoBehaviour:
   pauseManager: {fileID: 571977237}
   bookController: {fileID: 1696679599}
   interaction: {fileID: 1117746551}
+  submitPressed: 0
 --- !u!1 &1658806794
 GameObject:
   m_ObjectHideFlags: 0
