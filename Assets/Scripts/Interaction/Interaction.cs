@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
-    [SerializeField] private GameObject interactUI;
+    [SerializeField] protected GameObject interactUI;
+    public bool AllowInteract { get { return allowInteract; } }
 
-    private bool allowInteract;
-
+    private bool allowInteract = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -32,14 +32,8 @@ public class Interaction : MonoBehaviour
         }
     }
 
-    protected virtual void OnInteract()
+    public virtual void OnInteract()
     {
         interactUI.SetActive(false);
-    }
-
-    protected void DisableInteract()
-    {
-        interactUI.SetActive(false);
-        gameObject.SetActive(false);
     }
 }

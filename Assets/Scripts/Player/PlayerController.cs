@@ -12,23 +12,18 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movement;
 
-    // Update is called once per frame
-    void Update()
+    public void SetMovement(Vector2 inputMovement)
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
+        movement = inputMovement;
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        if (inputMovement.x == 1 || inputMovement.x == -1 || inputMovement.y == 1 || inputMovement.y == -1)
         {
-            animator.SetFloat("LastMoveHorizontal", Input.GetAxisRaw("Horizontal"));
-            animator.SetFloat("LastMoveVertical", Input.GetAxisRaw("Vertical"));
+            animator.SetFloat("LastMoveHorizontal", inputMovement.x);
+            animator.SetFloat("LastMoveVertical", inputMovement.y);
         }
-
-       
     }
 
     void FixedUpdate()

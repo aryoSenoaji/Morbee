@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MapTrigger : MapLoader
+public class MapTrigger : MonoBehaviour
 {
-    [SerializeField] public string mapName;
+    public string mapName;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !other.isTrigger)
