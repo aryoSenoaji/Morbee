@@ -7,6 +7,8 @@ TagManager:
   - NPC
   - PatrolPoint
   - Obstacle
+  - Rempah
+  - Puzzle
   layers:
   - Default
   - TransparentFX
@@ -46,4 +48,10 @@ TagManager:
     locked: 0
   - name: Object
     uniqueID: 3508767755
+    locked: 0
+  - name: Puzzle
+    uniqueID: 391426421
+    locked: 0
+  - name: Pieces
+    uniqueID: 2382395073
     locked: 0
