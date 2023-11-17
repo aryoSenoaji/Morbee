@@ -11,7 +11,18 @@ public class InputManager : MonoBehaviour
     public bool dialoguePressed = false;
     public bool submitPressed = false;
 
-    void Update()
+    private static InputManager instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogError("Found more than one Input Manager in the scene.");
+        }
+        instance = this;
+    }
+
+    public void Update()
     {
         HandlePlayerInput();
         HandlePauseInput();
@@ -21,7 +32,12 @@ public class InputManager : MonoBehaviour
         HandleSubmitInput();
     }
 
-    void HandlePlayerInput()
+    public static InputManager GetInstance()
+    {
+        return instance;
+    }
+
+    public void HandlePlayerInput()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -29,7 +45,7 @@ public class InputManager : MonoBehaviour
         playerController.SetMovement(new Vector2(horizontal, vertical));
     }
 
-    void HandlePauseInput()
+    public void HandlePauseInput()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -37,7 +53,7 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    void HandleBookInput()
+    public void HandleBookInput()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
@@ -45,7 +61,7 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    void HandleInteractionInput()
+    public void HandleInteractionInput()
     {
         if (interaction.AllowInteract)
         {
@@ -56,7 +72,7 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    void HandleDialogueInput()
+    public void HandleDialogueInput()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -68,7 +84,7 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    void HandleSubmitInput()
+    public void HandleSubmitInput()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
