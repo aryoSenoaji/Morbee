@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
 
     private Story currentStory;
 
-    public bool dialogueIsPlaying { get; private set; }
+    public bool DialogueIsPlaying { get; private set; }
 
     [Header("Dialogue Key and Value")]
     private static DialogueManager instance;
@@ -41,7 +41,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
-        dialogueIsPlaying = false;
+        DialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
 
         // get the layout animator
@@ -51,7 +51,7 @@ public class DialogueManager : MonoBehaviour
     private void Update()
     {
         // return right away if dialogue isn't playing
-        if (!dialogueIsPlaying)
+        if (!DialogueIsPlaying)
         {
             return;
         }
@@ -66,7 +66,7 @@ public class DialogueManager : MonoBehaviour
     public void EnterDialogueMode(TextAsset inkJSON)
     {
         currentStory = new Story(inkJSON.text);
-        dialogueIsPlaying = true;
+        DialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
         // reset portrait, layout, and speaker
@@ -129,7 +129,7 @@ public class DialogueManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
 
-        dialogueIsPlaying = false;
+        DialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
     }

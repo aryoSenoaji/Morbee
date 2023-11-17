@@ -28,10 +28,12 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        // Check if the DialogueManager instance exists before using it
+        DialogueManager dialogueManager = DialogueManager.GetInstance();
+        if (dialogueManager != null && dialogueManager.DialogueIsPlaying)
         {
             return;
         }
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * movement);
     }
 }

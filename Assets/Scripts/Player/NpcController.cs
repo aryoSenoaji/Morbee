@@ -19,7 +19,7 @@ public class NpcMovement : MonoBehaviour
 
     void Update()
     {
-        if (!DialogueManager.GetInstance().dialogueIsPlaying)
+        if (!DialogueManager.GetInstance().DialogueIsPlaying)
         {
             Patrol();
             UpdateAnimator();
