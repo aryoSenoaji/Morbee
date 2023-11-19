@@ -21,7 +21,7 @@ public class dragAndDrop : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.transform.CompareTag("Puzzle"))
             {
-                if (!hit.transform.GetComponent<pieceScript>().InrandomPosition)
+                if (!hit.transform.GetComponent<pieceScript>().InTruePosition)
                 {
                     SelectedPiece = hit.transform.gameObject;
                     SelectedPiece.GetComponent<pieceScript>().Selected = true;
