@@ -7,6 +7,8 @@ using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
+    [Header("Params")]
+    [SerializeField] private float typingSpeed = 0.04f;
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
@@ -18,6 +20,10 @@ public class DialogueManager : MonoBehaviour
     private Story currentStory;
 
     public bool DialogueIsPlaying { get; private set; }
+
+    private bool canContinueToNextLine  = false;
+
+    private Coroutine displayLineCoroutine;
 
     [Header("Dialogue Key and Value")]
     private static DialogueManager instance;
@@ -57,7 +63,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         // handle continuing to the next line in the dialogue when submit is pressed
-        if (InputManager.GetInstance().GetSubmitPressed())
+        if (canContinueToNextLine 
+            && InputManager.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
         }
@@ -82,7 +89,11 @@ public class DialogueManager : MonoBehaviour
         if (currentStory.canContinue)
         {
             // set text for the current dialogue line
-            dialogueText.text = currentStory.Continue();
+            if (displayLineCoroutine != null)
+            {
+                StopCoroutine(displayLineCoroutine);
+            }
+            displayLineCoroutine = StartCoroutine(DisplayLine(currentStory.Continue()));
             // handle tags
             HandleTags(currentStory.currentTags);
         }
@@ -90,6 +101,29 @@ public class DialogueManager : MonoBehaviour
         {
             StartCoroutine(ExitDialogueMode());
         }
+    }
+
+    private IEnumerator DisplayLine(string line)
+    {
+        // empty dialogue text
+        dialogueText.text = "";
+
+        canContinueToNextLine = false;
+
+        // display each letter one at a time
+        foreach (char letter in line.ToCharArray())
+        {
+            // if the submit button is pressed, finish up the line right away
+            if (InputManager.GetInstance().GetSubmitPressed())
+            {
+                dialogueText.text = line;
+                break;
+            }
+
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+        canContinueToNextLine = true;
     }
 
     private void HandleTags(List<string> currentTags)
