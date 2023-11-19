@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
-public class pieceScript : MonoBehaviour
+public class PieceScript : MonoBehaviour
 {
     private Vector3 randomPosition;
     public bool InTruePosition;
