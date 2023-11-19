@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class pieceScript : MonoBehaviour
 {
     private Vector3 randomPosition;
-    public bool InrandomPosition;
+    public bool InTruePosition;
     public bool Selected;
+    public bool AllPieceInCurrentPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,17 +20,24 @@ public class pieceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, randomPosition)< 0.5f)
+        if(AllPieceInCurrentPosition == false)
         {
-            if (!Selected)
+            if (Vector3.Distance(transform.position, randomPosition)< 0.5f)
             {
-                if(InrandomPosition == false)
+                if (!Selected)
                 {
-                    transform.position = randomPosition;
-                    InrandomPosition = true;
-                    GetComponent<SortingGroup>().sortingOrder = 0;
+                    if(InTruePosition == false)
+                    {
+                        transform.position = randomPosition;
+                        InTruePosition = true;
+                        GetComponent<SortingGroup>().sortingOrder = 0;
+                    }
                 }
-            }
+            }  
+        }
+        if(InTruePosition == true)
+        {
+            SceneManager.LoadScene("MapMain");
         }
     }
 }
