@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class DragAndDrop : MonoBehaviour
 {
+    //public Sprite[] Niveles; //level
     public GameObject SelectedPiece;
     int orderInLayer = 1;
+    public int TotalPiece = 0; //bagian yang saling mengunci
+    public int TotalPieceForWin;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //for (int i = 0; i < 36; i++)
+        //{
+        //    GameObject.Find("Pieces("+ i + ")").transform.Find("Puzzle").GetComponent<SpriteRenderer>().sprite = Niveles[PlayerPrefs.GetInt("Nivel")];
+        //}
     }
 
     // Update is called once per frame
@@ -31,20 +38,24 @@ public class DragAndDrop : MonoBehaviour
             }
         }
             
-    if(Input.GetMouseButtonUp(0))
-    {
-        if (SelectedPiece != null)
+        if(Input.GetMouseButtonUp(0))
         {
-            SelectedPiece.GetComponent<PieceScript>().Selected = false;
-            SelectedPiece = null;
+            if (SelectedPiece != null)
+            {
+                SelectedPiece.GetComponent<PieceScript>().Selected = false;
+                SelectedPiece = null;
+            }
         }
-    }
 
-    if(SelectedPiece != null)
-    {
-        Vector3 MousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        SelectedPiece.transform.position = new Vector3(MousePoint.x, MousePoint.y, 0);
-    }
+        if(SelectedPiece != null)
+        {
+            Vector3 MousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            SelectedPiece.transform.position = new Vector3(MousePoint.x, MousePoint.y, 0);
+        }
 
+        if(TotalPiece == TotalPieceForWin)
+        {
+            SceneManager.LoadScene("MapMain");
+        }
     }
 }
