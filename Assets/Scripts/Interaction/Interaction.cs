@@ -29,7 +29,6 @@ public class Interaction : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 OnInteract();
-                SceneManager.LoadScene("PuzzleGame");
             }
         }
     }
@@ -37,5 +36,6 @@ public class Interaction : MonoBehaviour
     public virtual void OnInteract()
     {
         interactUI.SetActive(false);
+        //SceneManager.LoadScene("PuzzleGame");
     }
 }

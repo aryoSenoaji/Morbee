@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa062876997e764ab52cce53a9d7082, type: 3}
   m_Name: Ginger
   m_EditorClassIdentifier: 
-  spiceName: Ginger
-  description: ini adalah ginger
+  spiceName: Jahe
+  description: ini adalah jahe
   spiceImage: {fileID: 21300000, guid: 55af6554f3e4d8d46add865eb89516a2, type: 3}

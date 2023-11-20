@@ -27,7 +27,6 @@ public class InputManager : MonoBehaviour
         HandlePlayerInput();
         HandlePauseInput();
         HandleBookInput();
-        HandleInteractionInput();
         HandleDialogueInput();
         HandleSubmitInput();
     }
@@ -58,17 +57,6 @@ public class InputManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             bookController.ToggleBook();
-        }
-    }
-
-    public void HandleInteractionInput()
-    {
-        if (interaction.AllowInteract)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                interaction.OnInteract();
-            }
         }
     }
 
