@@ -334,6 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &48636081
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,6 +546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &97766646
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &175757147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,6 +1054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &204343839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,6 +1266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &221614369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,6 +1478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &249022082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +1690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &261541474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1962,6 +1969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &265634810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,6 +2265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &318376801
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,6 +2477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &320637599
 GameObject:
   m_ObjectHideFlags: 0
@@ -2763,6 +2773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &326738155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3058,6 +3069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &410632533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3353,6 +3365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &451625400
 GameObject:
   m_ObjectHideFlags: 0
@@ -3816,6 +3829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &591980497
 GameObject:
   m_ObjectHideFlags: 0
@@ -4027,6 +4041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &603874846
 GameObject:
   m_ObjectHideFlags: 0
@@ -4238,6 +4253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &682449785
 GameObject:
   m_ObjectHideFlags: 0
@@ -4449,6 +4465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &692799476
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,6 +4761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &773700748
 GameObject:
   m_ObjectHideFlags: 0
@@ -4955,6 +4973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &775063709
 GameObject:
   m_ObjectHideFlags: 0
@@ -5166,6 +5185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &819885511
 GameObject:
   m_ObjectHideFlags: 0
@@ -5545,6 +5565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &877898612
 GameObject:
   m_ObjectHideFlags: 0
@@ -6428,6 +6449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &1151292698
 GameObject:
   m_ObjectHideFlags: 0
@@ -6807,6 +6829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &1194358386
 GameObject:
   m_ObjectHideFlags: 0
@@ -7165,8 +7188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedPiece: {fileID: 0}
-  TotalPiece: 0
-  TotalPieceForWin: 36
 --- !u!1 &1378881078
 GameObject:
   m_ObjectHideFlags: 0
@@ -7462,6 +7483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &1463821252
 GameObject:
   m_ObjectHideFlags: 0
@@ -7841,6 +7863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &1574793590
 GameObject:
   m_ObjectHideFlags: 0
@@ -8136,6 +8159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &1634734173
 GameObject:
   m_ObjectHideFlags: 0
@@ -8347,6 +8371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &1645786732
 GameObject:
   m_ObjectHideFlags: 0
@@ -8978,6 +9003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &1796196976
 GameObject:
   m_ObjectHideFlags: 0
@@ -9189,6 +9215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &1837907921
 GameObject:
   m_ObjectHideFlags: 0
@@ -9400,6 +9427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &1853331831
 GameObject:
   m_ObjectHideFlags: 0
@@ -9611,6 +9639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &1866777039
 GameObject:
   m_ObjectHideFlags: 0
@@ -9990,6 +10019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &2004791687
 GameObject:
   m_ObjectHideFlags: 0
@@ -10201,6 +10231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &2009977826
 GameObject:
   m_ObjectHideFlags: 0
@@ -10496,6 +10527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &2100935590
 GameObject:
   m_ObjectHideFlags: 0
@@ -10707,6 +10739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &2106848117
 GameObject:
   m_ObjectHideFlags: 0
@@ -10918,6 +10951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InTruePosition: 0
   Selected: 0
+  AllPieceInCurrentPosition: 0
 --- !u!1 &2114186180
 GameObject:
   m_ObjectHideFlags: 0
