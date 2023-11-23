@@ -36,6 +36,14 @@ public class InputManager : MonoBehaviour
         return instance;
     }
 
+    public bool IsPlayerWalking()
+    {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+
+        return horizontal != 0f || vertical != 0f;
+    }
+
     public void HandlePlayerInput()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");

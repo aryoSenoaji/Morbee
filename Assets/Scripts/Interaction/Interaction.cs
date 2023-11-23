@@ -36,6 +36,6 @@ public class Interaction : MonoBehaviour
     public virtual void OnInteract()
     {
         interactUI.SetActive(false);
-        //SceneManager.LoadScene("PuzzleGame");
+        SceneManager.LoadScene("PuzzleGame");
     }
 }

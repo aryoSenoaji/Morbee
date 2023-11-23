@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
     public float moveSpeed = 5f;
 
     public Rigidbody2D rb;
     public Animator animator;
 
+    private AudioManager audioManager;  // Reference to the AudioManager
+
     Vector2 movement;
+
+    private bool isWalking = false;  // Flag to track whether the player is walking
+
+    private void Start()
+    {
+        audioManager = FindObjectOfType<AudioManager>();  // Find the AudioManager in the scene
+    }
 
     public void SetMovement(Vector2 inputMovement)
     {
@@ -26,7 +34,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void Update()
     {
         // Check if the DialogueManager instance exists before using it
         DialogueManager dialogueManager = DialogueManager.GetInstance();
@@ -34,6 +42,33 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-        rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * movement);
+
+        // Check if the player is walking based on input from InputManager
+        if (InputManager.GetInstance().IsPlayerWalking())
+        {
+            if (!isWalking)
+            {
+                isWalking = true;
+                audioManager.PlaySfx(audioManager.walking);
+            }
+        }
+        else
+        {
+            if (isWalking)
+            {
+                isWalking = false;
+                // Stop the footstep sound when the movement keys are released
+                audioManager.sfxSource.Stop();
+            }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        // Move the player only if walking
+        if (isWalking)
+        {
+            rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * movement);
+        }
     }
 }
