@@ -12,7 +12,7 @@ public class PieceScript : MonoBehaviour
     void Start()
     {
         randomPosition = transform.position;
-        transform.position = new Vector3(Random.Range(2f, 8f), Random.Range(4.2f, -3f));
+        transform.position = new Vector3(Random.Range(2f, 7f), Random.Range(2.6f, -3f));
     }
 
     void Update()
