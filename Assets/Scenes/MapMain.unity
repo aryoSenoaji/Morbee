@@ -44878,6 +44878,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -390
       objectReference: {fileID: 0}
+    - target: {fileID: 5670732219830043315, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
+      propertyPath: m_text
+      value: "\rDemam adalah kondisi kenaikan suhu tubuh di atas normal, disertai
+        gejala seperti menggigil, lemas, dan pusing."
+      objectReference: {fileID: 0}
     - target: {fileID: 8997155770161588212, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
