@@ -36,6 +36,6 @@ public class Interaction : MonoBehaviour
     public virtual void OnInteract()
     {
         interactUI.SetActive(false);
-        SceneManager.LoadScene("Puzzle_Lvl1");  
+        //SceneManager.LoadScene("Puzzle_Lvl1");  
     }
 }
