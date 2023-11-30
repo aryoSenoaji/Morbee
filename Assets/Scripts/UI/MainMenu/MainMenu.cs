@@ -6,10 +6,26 @@ using UnityEngine.InputSystem;
 
 public class MainMenu : MonoBehaviour
 {
+    void Start()
+    {
+        if (GameObject.FindObjectOfType<GameManager>() == null)
+        {
+            GameObject gameManager = new GameObject("GameManager");
+            gameManager.AddComponent<GameManager>();
+        }
+    }
+
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(1);
-        Time.timeScale = 1.0f;
+        if (!GameManager.cutscenePlayed)
+        {
+            SceneManager.LoadSceneAsync("IntroCutscene");
+            GameManager.cutscenePlayed = true;
+        }
+        else
+        {
+            SceneManager.LoadSceneAsync("MapMain");
+        }
     }
 
     public void BackHome()

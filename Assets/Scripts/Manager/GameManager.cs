@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static bool cutscenePlayed = false; // Variabel status cutscene
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        // Pastikan hanya satu objek GameManager yang ada di dalam scene
+        if (FindObjectsOfType<GameManager>().Length > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject); // Biarkan objek hidup melalui pergantian scene
+        }
     }
 }
