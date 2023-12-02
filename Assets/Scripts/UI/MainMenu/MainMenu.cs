@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadSceneAsync("MapMain");
+            SceneManager.LoadSceneAsync("HouseMc");
         }
     }
 

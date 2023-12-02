@@ -26,6 +26,6 @@ public class CutSceneController : MonoBehaviour
     void LoadInGameScene()
     {
         // Ganti "YourInGameScene" dengan nama scene in-game Anda
-        SceneManager.LoadScene("MapMain");
+        SceneManager.LoadScene("HouseMc");
     }
 }
