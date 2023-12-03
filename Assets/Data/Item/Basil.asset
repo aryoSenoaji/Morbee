@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa062876997e764ab52cce53a9d7082, type: 3}
   m_Name: Basil
   m_EditorClassIdentifier: 
-  spiceName: Basil
-  description: ini bunga kemangi
+  spiceName: Kemangi
+  description: Kemangi, Herbal penurun demam alami dengan aroma menyegarkan dan menyehatkan.
   spiceImage: {fileID: 21300000, guid: 23aa68dbb1ce4504d8ad5751fee74e8a, type: 3}

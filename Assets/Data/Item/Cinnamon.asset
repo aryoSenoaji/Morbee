@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa062876997e764ab52cce53a9d7082, type: 3}
   m_Name: Cinnamon
   m_EditorClassIdentifier: 
-  spiceName: Cinnamon
-  description: ini adalah kayu manis
+  spiceName: Kayu Manis
+  description: Kayu Manis, antimikroba alami, obat demam tradisional yang efektif.
   spiceImage: {fileID: 21300000, guid: 42b14ca73a2ad7647a1e8c954ea036f0, type: 3}

@@ -6691,24 +6691,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 450255104}
     - target: {fileID: 4435838519040419201, guid: d5ac3cd5c2976424cb1da382eb81974f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.9445486
-      objectReference: {fileID: 0}
-    - target: {fileID: 4435838519040419201, guid: d5ac3cd5c2976424cb1da382eb81974f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.9445486
-      objectReference: {fileID: 0}
-    - target: {fileID: 4435838519040419201, guid: d5ac3cd5c2976424cb1da382eb81974f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9445486
-      objectReference: {fileID: 0}
-    - target: {fileID: 4435838519040419201, guid: d5ac3cd5c2976424cb1da382eb81974f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.695
+      value: -10.82
       objectReference: {fileID: 0}
     - target: {fileID: 4435838519040419201, guid: d5ac3cd5c2976424cb1da382eb81974f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.663
+      value: -17.41
       objectReference: {fileID: 0}
     - target: {fileID: 4435838519040419201, guid: d5ac3cd5c2976424cb1da382eb81974f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8586,34 +8574,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1817357633}
     m_Modifications:
-    - target: {fileID: 1949302394549416835, guid: c9b49a9e51e03d742a37305897fd7831, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.40657043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1949302394549416835, guid: c9b49a9e51e03d742a37305897fd7831, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.40657043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1949302394549416835, guid: c9b49a9e51e03d742a37305897fd7831, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.40657043
-      objectReference: {fileID: 0}
     - target: {fileID: 2556756528880310013, guid: c9b49a9e51e03d742a37305897fd7831, type: 3}
       propertyPath: inventory
       value: 
       objectReference: {fileID: 450255104}
-    - target: {fileID: 4435838519040419201, guid: c9b49a9e51e03d742a37305897fd7831, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.79694897
-      objectReference: {fileID: 0}
-    - target: {fileID: 4435838519040419201, guid: c9b49a9e51e03d742a37305897fd7831, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.78711003
-      objectReference: {fileID: 0}
-    - target: {fileID: 4435838519040419201, guid: c9b49a9e51e03d742a37305897fd7831, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.78711003
-      objectReference: {fileID: 0}
     - target: {fileID: 4435838519040419201, guid: c9b49a9e51e03d742a37305897fd7831, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.713
@@ -44947,15 +44911,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3689836841478018303, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3689836841478018303, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3689836841478018303, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 985
       objectReference: {fileID: 0}
     - target: {fileID: 3689836841478018303, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -44963,24 +44927,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5145490371599350226, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5145490371599350226, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5145490371599350226, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 335
       objectReference: {fileID: 0}
     - target: {fileID: 5145490371599350226, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -390
-      objectReference: {fileID: 0}
-    - target: {fileID: 5670732219830043315, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
-      propertyPath: m_text
-      value: "\rDemam adalah kondisi kenaikan suhu tubuh di atas normal, disertai
-        gejala seperti menggigil, lemas, dan pusing."
       objectReference: {fileID: 0}
     - target: {fileID: 8997155770161588212, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
       propertyPath: m_Pivot.x
