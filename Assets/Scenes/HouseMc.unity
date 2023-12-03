@@ -11881,6 +11881,115 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6274118, y: 1.8150686}
   m_EdgeRadius: 0
+--- !u!1 &1947014817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1947014821}
+  - component: {fileID: 1947014820}
+  - component: {fileID: 1947014819}
+  - component: {fileID: 1947014818}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1947014818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947014817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80de85f8c0e2784dae3510bb19e339c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2079415350}
+  smoothing: 0.03
+  minPos: {x: -2.31, y: -6.31}
+  maxPos: {x: 4.95, y: 2.23}
+--- !u!81 &1947014819
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947014817}
+  m_Enabled: 1
+--- !u!20 &1947014820
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947014817}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 2.8
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1947014821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947014817}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.24, y: -1.5, z: -1.6675884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1963057817
 GameObject:
   m_ObjectHideFlags: 0
@@ -12239,7 +12348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3079105851132186245, guid: 83891c9fef032a94ea4f0521de19fa33, type: 3}
       propertyPath: m_Name
-      value: pf_player
+      value: Saras
       objectReference: {fileID: 0}
     - target: {fileID: 4231060563435124365, guid: 83891c9fef032a94ea4f0521de19fa33, type: 3}
       propertyPath: bookUI
@@ -12288,6 +12397,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515e3aaa78d901a40ba1df8303e81f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &2079415350 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 753232554308152539, guid: 83891c9fef032a94ea4f0521de19fa33, type: 3}
+  m_PrefabInstance: {fileID: 2079415347}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2089870534
 GameObject:
   m_ObjectHideFlags: 0
@@ -12494,12 +12608,13 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1947014821}
+  - {fileID: 2079415347}
   - {fileID: 1011367147}
   - {fileID: 1900263662}
   - {fileID: 1239514807}
   - {fileID: 1963057819}
   - {fileID: 1366144582}
-  - {fileID: 2079415347}
   - {fileID: 1301095176}
   - {fileID: 793709020}
   - {fileID: 423368481}
