@@ -15,9 +15,12 @@ public class PlayerController : MonoBehaviour
 
     private bool isWalking = false;  // Flag to track whether the player is walking
 
+    public VectorValue startingPosition;
+
     private void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();  // Find the AudioManager in the scene
+        transform.position = startingPosition.initialValue;
     }
 
     public void SetMovement(Vector2 inputMovement)
