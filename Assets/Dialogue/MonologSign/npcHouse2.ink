@@ -1,5 +1,5 @@
 -> main
 
 === main ===
-Kediaman keluarga bapak dan ibu joni. #speaker:Saras #portrait:saras #layout:left
+Kediaman keluarga Bapak dan Ibu Joni. #speaker:Saras #portrait:saras #layout:left
 -> END
