@@ -13,7 +13,11 @@ public class MapTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
-            playerStorage.initialValue = playerPosition;
+            //playerStorage.initialValue = playerPosition;
+            if (SceneManager.GetActiveScene().name == "MapMain") 
+            {
+                ItemDatabase.instance.SavePlayerPosition(playerPosition);
+            }
             SceneManager.LoadScene(mapName);
         }
     }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
@@ -20,7 +20,17 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();  // Find the AudioManager in the scene
-        transform.position = startingPosition.initialValue;
+    }
+
+    private void Awake()
+    {
+        if (ItemDatabase.instance != null)
+        {
+            if (ItemDatabase.instance.playerPosition != null && SceneManager.GetActiveScene().name == "MapMain")
+            {
+                transform.position = ItemDatabase.instance.playerPosition;
+            }
+        }
     }
 
     public void SetMovement(Vector2 inputMovement)

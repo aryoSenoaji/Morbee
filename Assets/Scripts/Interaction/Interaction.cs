@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Interaction : MonoBehaviour
 {
+    public string puzzleScene;
+
+    public int itemId;
+
+    private Vector2 playerPos;
+
     [SerializeField] protected GameObject interactUI;
     public bool AllowInteract { get { return allowInteract; } }
 
@@ -12,14 +19,23 @@ public class Interaction : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        interactUI.SetActive(true);
-        allowInteract = true;
+        if (collision.tag == "Player")
+        {
+            playerPos = collision.transform.position;
+
+            interactUI.SetActive(true);
+
+            allowInteract = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        interactUI.SetActive(false);
-        allowInteract = false;
+        if (collision.tag == "Player")
+        {
+            interactUI.SetActive(false);
+            allowInteract = false;
+        }
     }
 
     private void Update()
@@ -36,6 +52,16 @@ public class Interaction : MonoBehaviour
     public virtual void OnInteract()
     {
         interactUI.SetActive(false);
-        //SceneManager.LoadScene("Puzzle_Lvl1");  
+        ItemDatabase.instance.SavePlayerPosition(playerPos);
+        ItemDatabase.instance.AddItemToList(itemId);
+        SceneManager.LoadScene(puzzleScene);
+    }
+
+    private void Start()
+    {
+        if (ItemDatabase.instance.itemListDestroy.Contains(itemId))
+        {
+            Destroy(gameObject);
+        }
     }
 }

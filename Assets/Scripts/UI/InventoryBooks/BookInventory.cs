@@ -8,12 +8,6 @@ public class BookInventory : MonoBehaviour
     public List<BookItem> items;
     [SerializeField] private BookInventoryUI bookInventoryUI;
 
-    public void AddItem(BookItem item)
-    {
-        items.Add(item);
-        bookInventoryUI.AddItemUI(item);
-    }
-
     public bool HasItem(BookItem item)
     {
         if (items.Contains(item)) return true;
@@ -43,5 +37,14 @@ public class BookInventory : MonoBehaviour
     public void Hide()
     {
         gameObject.SetActive(false);
+    }
+
+    private void Start()
+    {
+        int itemCount = ItemDatabase.instance.inventory.Count;
+        for (int i = 0; i < itemCount; i++)
+        {
+            BookInventoryUI.Instance.AddItemUI(ItemDatabase.instance.inventory[i]);
+        }
     }
 }

@@ -9,7 +9,7 @@ public class ItemInteraction : Interaction
     public override void OnInteract()
     {
         base.OnInteract();
-        inventory.AddItem(itemToAdd);
+        ItemDatabase.instance.AddItem(itemToAdd);
         DisableInteract();
     }
 
