@@ -1,26 +1,33 @@
 -> main
 
 === main ===
-Nek, kenapa sedari tadi nenek mondar-mandir saja? seperti kelihatan bingung#speaker:Saras #portrait:saras #layout:left
-<color=\#ffcc5c>Saras baru saja sampai di rumah neneknya</color>#speaker:Saras #portrait:saras #layout:left
-Tidak apa-apa Saras, kamu baru sampai langsung saja istirahat dahulu.#speaker:Nenek Saras #portrait:grandma #layout:right
-Tapi saat Saras masuk, aku melihat nenek mondar-mandir saja disitu, atau mungkin ada yang sedang dipikiran oleh nenek?#speaker:Saras #portrait:saras #layout:left
-<color=\#ffcc5c>Dengan wajah sedikit khawatir dan gusar</color>#speaker:Nenek Saras #portrait:grandma #layout:right
-Saat kamu berjalan menuju kerumah nenek apa kamu melihat sedikit perbeedan semenjak terakhir kali kamu kesini?#speaker:Nenek Saras #portrait:grandma #layout:right
-Hmmm <color=\#ffcc5c>sedikit berpikir</color> sepertinya tidak ada nek, hanya saja pepohonan disekitar desa ini lebih banyak kering dan terlihat tandus nek#speaker:Saras #portrait:saras #layout:left
-<color=\#ffcc5c>Dengan wajah khawatir</color> Iya betul Saras beberapa tahun kebelakangan ini desa sedang dilanda kekeringan karena kemarau panjang#speaker:Nenek Saras #portrait:grandma #layout:right
-Dulu desa disini seperti terakhir kali kamu berkunjung masih sangat asri dan hijau, namun semenjak warga desa mulai melupakan <color=\#854442>Dewi Sri</color>, desa mulai menjadi dilanda kekeringan.#speaker:Nenek Saras #portrait:grandma #layout:right
-<color=\#ffcc5c>Dengan wajah penasaran</color> <color=\#854442>Dewi Sri</color> ? siapa itu <color=\#854442>Dewi Sri</color> Nek?#speaker:Saras #portrait:saras #layout:left
-Iya <color=\#854442>Dewi Sri</color> Saras, jadi dia adalah dewi yang sering disembah oleh warga desa untuk mengharapkan kesuburan serta kemakmuran pertanian#speaker:Nenek Saras #portrait:grandma #layout:right
-Namun beberapa tahun belakangan banyak warga desa yang melupakannya, bahkan patungnya pun yang digunakan sebagai media penyembah sudah tidak pernah diurus dan diberi sesajen sebagai rasa terima kasih kepada <color=\#854442>Dewi Sri</color>.#speaker:Nenek Saras #portrait:grandma #layout:right
-<color=\#ffcc5c>Dengan wajah heran</color> wah Saras baru tahu nek, kalau di desa ini ada kepercayaan untuk menyembah <color=\#854442>Dewi Sri</color> dalam mengharapkan kesuburan dan kemakmuran#speaker:Saras #portrait:saras #layout:left
-Iya Saras itu sudah lama sekali bahkan semenjak kamu belum lahir, warga desa sudah melakukanya.#speaker:Nenek Saras #portrait:grandma #layout:right
-Tapi biarlah tidak usah dipikirkan Saras kamu kesini untuk berlibur bukan?#speaker:Nenek Saras #portrait:grandma #layout:right
-Kalau kamu capek boleh langsung istirahat di ruang tamu, nenek sudah siapkan cemilan favorit kamu.#speaker:Nenek Saras #portrait:grandma #layout:right
-Atau kalau kamu ingin jalan-jalan dulu di desa silahkan saja, karena kamu terakhir kesini belum sempat jalan-jalan kan karna kamu masih kecil.#speaker:Nenek Saras #portrait:grandma #layout:right
-Desa ini banyak spot bagus untuk jalan-jalan, kamu bisa ke <color=\#854442>Hutan Atas </color> bisa juga ke <color=\#854442>Hutan Bawah</color>#speaker:Nenek Saras #portrait:grandma #layout:right
-Namun baiknya, kamu sebelum jalan-jalan bisa <color=\#854442>mengunjungi rumah Pak Kepala Desa namanya Pak Joko rumahnya ada di diatas rumah nenek ini.</color>#speaker:Nenek Saras #portrait:grandma #layout:right
-Atau kamu juga bisa mengunjungi ke<color=\#854442>Klinik yang ada di desa ini, disana ada dokter baru yang sangat ramah kepada para pasien.</color>#speaker:Nenek Saras #portrait:grandma #layout:right
-<color=\#854442>Ohiya ini nenek ada buku yang menyimpan berbagai catatan yang berhubungan dengan Dewi Sri.</color>#speaker:Nenek Saras #portrait:grandma #layout:right
-Wah baik nek terima kasih.#speaker:Saras #portrait:saras #layout:left
+Halo Pak Dokter.#speaker:Saras #portrait:saras #layout:left
+<color=\#ffcc5c>Sambil terlihat sangat sibuk</color> Iya halo kak, ada apa ya?#speaker:Dokter #portrait:doctor #layout:right
+Oh tidak apa-apa Pak, tadi saya sedang berjalan-jalan sehabis dari rumah Pak Joko.#speaker:Saras #portrait:saras #layout:left
+Lalu saya kaget melihat dari luar klinik sangat ramai sekali pasiennya untuk ukuran klinik di desa pak.#speaker:Saras #portrait:saras #layout:left
+<color=\#ffcc5c>Dengan wajah penasaran</color> lalu kenapa ramai sekali pasiennya ya pak?.#speaker:Saras #portrait:saras #layout:left
+<color=\#ffcc5c>Masih sangat sibuk</color>  Sebelumnya nama kakak siapa ya?#speaker:Dokter #portrait:doctor #layout:right
+Nama saya Saras pak.#speaker:Saras #portrait:saras #layout:left
+Oke Saras, jadi pasien disini sudah 3 hari Demam dan tak kunjung turun. padahal kemarin diberikan obat dan kini stock obat kita sudah pun habis. #speaker:Dokter #portrait:doctor #layout:right
+Jika tidak segera meminum obat lagi saya hanya takut pasien tidak bisa bertahan lebih lama lagi. #speaker:Dokter #portrait:doctor #layout:right
+<color=\#ffcc5c>Pak Joko yang baru datang langsung ikut pembicaraan</color> Apa yang terjadi Pak Dokter ramai sekali pasien disini, tidak biasanya seperti ini!<color=\#ffcc5c>Dengan wajah kaget</color>#speaker:Pak Joko #portrait:headvillage #layout:right
+Wah halo Pak Joko, saya juga penasaran tadi saat sedang berjalan-jalan di sekitar desa kenapa banyak sekali pasien disini.#speaker:Saras #portrait:saras #layout:left
+Wah ternyata ada Saras juga, jadi ada apa Pak Dokter?#speaker:Pak Joko #portrait:headvillage #layout:right
+Jadi apa yang terjadi Pak Dokter?#speaker:Pak Joko #portrait:headvillage #layout:right
+Demam pasien tak kunjung turun. <color=\#eb3434>dengan wajah cemas</color>#speaker:Dokter #portrait:doctor #layout:right
+Setelah kemarin diberikan obat dan kini stock obat kita sudah habis, jika tidak segera meminum obat saya hanya takut pasien tidak bisa bertahan lebih lama lagi. #speaker:Dokter #portrait:doctor #layout:right
+lalu bagaimana kiriman obat yang biasanya dikirimkan oleh pemerintah untuk desa kita?#speaker:Pak Joko #portrait:headvillage #layout:right
+Seharusnya segera dikirimkan 2 hari lagi, aku sedari tadi mencari sinyal untuk menelfon agar obat-obatan segera dikirimkan. #speaker:Dokter #portrait:doctor #layout:right
+apa yang harus kita lakukan? <color=\#eb3434>Cemas dan Resah</color> Saras! oh ya bukankah kamu membawa telfon juga? seharusnya telfonmu lebih canggih dan bisa mendapatkan sinyal.#speaker:Pak Joko #portrait:headvillage #layout:right
+Aku juga sedari tadi tidak menemukan sinyal pak#speaker:Saras #portrait:saras #layout:left
+Oh iya saya baru ingat sepertinya disini ada banyak macam rempah-rempah yang bisa di manfaatkan disekitar sini. #speaker:Pak Joko #portrait:headvillage #layout:right
+Yang bisa digunakan sebagai obat herbal. #speaker:Pak Joko #portrait:headvillage #layout:right
+Tidak bisa Pak Joko demam ini tampaknya cukup serius dan ada gejala lain yang harus membutuhkan obat resep. #speaker:Dokter #portrait:doctor #layout:right
+<color=\#eb3434>Dengan nada tinggi</color>. kalau memang begitu bagaimana? apa kita akan tetap pasrah dan menunggu bat kiriman saja dan menunggu pasien disini semakin parah!#speaker:Pak Joko #portrait:headvillage #layout:right
+<color=\#eb3434>Pak Joko dan Pak Dokter telah sibuk bertengkar</color>#speaker:Saras #portrait:saras #layout:left
+<color=\#eb3434>Saras ingin sekali keluar</color>#speaker:Saras #portrait:saras #layout:left
+<color=\#eb3434>Namun saras teringat bahwa ada catatan dari buku yang diberikan neneknya</color>#speaker:Saras #portrait:saras #layout:left
+<color=\#eb3434>Ucap dalam hati</color> sepertinya dari buku yang aku dapatkan ini ada panduan untuk mengatasi penyakit ini#speaker:Saras #portrait:saras #layout:left
+<color=\#854442>Saras bergegas keluar dan melihat buku</color> sepertinya dari buku yang aku dapatkan ini ada panduan untuk mengatasi penyakit ini#speaker:Saras #portrait:saras #layout:left
+<color=\#854442>Saras pun langsung berinisiatif untuk menolng pasien yang ada di klinik.</color>
 -> END
