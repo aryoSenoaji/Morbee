@@ -20,6 +20,7 @@ Kalau kamu capek boleh langsung istirahat di ruang tamu, nenek sudah siapkan cem
 Atau kalau kamu ingin jalan-jalan dulu di desa silahkan saja, karena kamu terakhir kesini belum sempat jalan-jalan kan karna kamu masih kecil.#speaker:Nenek Saras #portrait:grandma #layout:right
 Desa ini banyak spot bagus untuk jalan-jalan, kamu bisa ke <color=\#854442>Hutan Atas </color> bisa juga ke <color=\#854442>Hutan Bawah</color>#speaker:Nenek Saras #portrait:grandma #layout:right
 Namun baiknya, kamu sebelum jalan-jalan bisa <color=\#854442>mengunjungi rumah Pak Kepala Desa namanya Pak Joko rumahnya ada di diatas rumah nenek ini.</color>#speaker:Nenek Saras #portrait:grandma #layout:right
+Atau kamu juga bisa mengunjungi ke<color=\#854442>Klinik yang ada di desa ini, disana ada dokter baru yang sangat ramah kepada para pasien.</color>#speaker:Nenek Saras #portrait:grandma #layout:right
 <color=\#854442>Ohiya ini nenek ada buku yang menyimpan berbagai catatan yang berhubungan dengan Dewi Sri.</color>#speaker:Nenek Saras #portrait:grandma #layout:right
 Wah baik nek terima kasih.#speaker:Saras #portrait:saras #layout:left
 -> END
