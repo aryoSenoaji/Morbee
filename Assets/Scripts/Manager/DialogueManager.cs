@@ -105,24 +105,42 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator DisplayLine(string line)
     {
-        // empty dialogue text
-        dialogueText.text = "";
+        // set the text to the full line, but set the visible characters to 0
+        dialogueText.text = line;
+        dialogueText.maxVisibleCharacters = 0;
 
         canContinueToNextLine = false;
+
+        bool isAddingRichTextTag = false;
 
         // display each letter one at a time
         foreach (char letter in line.ToCharArray())
         {
-            // if the submit button is pressed, finish up the line right away
+            // if the submit button is pressed, finish up displaying the line right away
             if (InputManager.GetInstance().GetSubmitPressed())
             {
-                dialogueText.text = line;
+                dialogueText.maxVisibleCharacters = line.Length;
                 break;
             }
 
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            // check for rich text tag, if found, add it without waiting
+            if (letter == '<' || isAddingRichTextTag)
+            {
+                isAddingRichTextTag = true;
+                if (letter == '>')
+                {
+                    isAddingRichTextTag = false;
+                }
+            }
+            // if not rich text, add the next letter and wait a small time
+            else
+            {
+                dialogueText.maxVisibleCharacters++;
+                yield return new WaitForSeconds(typingSpeed);
+            }
         }
+
+        // actions to take after the entire line has finished displaying
         canContinueToNextLine = true;
     }
 
