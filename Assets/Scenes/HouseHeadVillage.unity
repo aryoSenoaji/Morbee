@@ -7941,7 +7941,7 @@ GameObject:
   - component: {fileID: 774931513}
   - component: {fileID: 774931512}
   m_Layer: 5
-  m_Name: books
+  m_Name: Books
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8010,7 +8010,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1496882657}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -10477,12 +10477,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8997155770161588212, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
   m_PrefabInstance: {fileID: 1496882655}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1496882657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 514021294805492987, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
+  m_PrefabInstance: {fileID: 1496882655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1496882658 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5542278563731822566, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
   m_PrefabInstance: {fileID: 1496882655}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1496882657}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96a6409229b4f27468286d28339c7246, type: 3}
@@ -10881,6 +10886,10 @@ PrefabInstance:
     - target: {fileID: 3448013420411516780, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_Name
       value: DialoguePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448013420411516780, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3453167289178501681, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_Sprite
