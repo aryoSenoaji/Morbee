@@ -54402,8 +54402,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 2734518029625204749}
   smoothing: 0.03
-  minPos: {x: -6.02, y: -1.86}
-  maxPos: {x: 7.83, y: 7.8}
+  minPos: {x: -5.98, y: -21.89}
+  maxPos: {x: 8.03, y: 27.5}
 --- !u!114 &3347196256030874884 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 141109046534394322, guid: 83891c9fef032a94ea4f0521de19fa33, type: 3}
@@ -55063,7 +55063,7 @@ Transform:
   m_GameObject: {fileID: 5649471045488382156}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.87, y: -3.61, z: -10}
+  m_LocalPosition: {x: 8.95, y: -3.69, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
