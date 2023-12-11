@@ -12706,7 +12706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5425281184350915839, guid: 835130646ef01c54a8854432e60f3a3c, type: 3}
       propertyPath: itemComplete
-      value: 
+      value: HouseMcFinal
       objectReference: {fileID: 0}
     - target: {fileID: 5425281184350915839, guid: 835130646ef01c54a8854432e60f3a3c, type: 3}
       propertyPath: playerStorage
@@ -13660,6 +13660,10 @@ PrefabInstance:
     - target: {fileID: 5425281184350915839, guid: 835130646ef01c54a8854432e60f3a3c, type: 3}
       propertyPath: mapName
       value: HouseClinic
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425281184350915839, guid: 835130646ef01c54a8854432e60f3a3c, type: 3}
+      propertyPath: itemComplete
+      value: HouseClinicFinal
       objectReference: {fileID: 0}
     - target: {fileID: 5425281184350915839, guid: 835130646ef01c54a8854432e60f3a3c, type: 3}
       propertyPath: playerPosition.x

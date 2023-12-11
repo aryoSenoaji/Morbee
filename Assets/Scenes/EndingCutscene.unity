@@ -405,7 +405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1218833688}
   skipButton: {fileID: 1506558699}
-  sceneName: HouseMc
+  sceneName: MainMenu
 --- !u!1 &1218833686
 GameObject:
   m_ObjectHideFlags: 0

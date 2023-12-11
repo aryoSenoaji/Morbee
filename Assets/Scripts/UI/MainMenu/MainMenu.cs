@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     {
         if (GameObject.FindObjectOfType<GameManager>() == null)
         {
-            GameObject gameManager = new GameObject("GameManager");
+            GameObject gameManager = new("GameManager");
             gameManager.AddComponent<GameManager>();
         }
     }

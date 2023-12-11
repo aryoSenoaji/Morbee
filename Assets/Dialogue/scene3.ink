@@ -8,9 +8,9 @@ Lalu saya kaget melihat dari luar klinik sangat ramai sekali pasiennya untuk uku
 Lalu kenapa ramai sekali pasiennya ya pak?#speaker:Saras #portrait:saras #layout:left
 Sebelumnya nama kakak siapa ya?#speaker:Dokter #portrait:doctor #layout:right
 Nama saya Saras pak#speaker:Saras #portrait:saras #layout:left
-Oke Saras, jadi pasien disini sudah 3 hari Demam dan tak kunjung turun. padahal kemarin diberikan obat dan kini stock obat kita sudah pun habis#speaker:Dokter #portrait:doctor #layout:right
+Oke Saras, jadi pasien disini sudah 3 hari Demam dan tak kunjung turun. padahal kemarin sudah diberikan obat dan kini stock obat kita sudah pun habis#speaker:Dokter #portrait:doctor #layout:right
 Jika tidak segera meminum obat lagi saya hanya takut pasien tidak bisa bertahan lebih lama lagi. #speaker:Dokter #portrait:doctor #layout:right
-<color=\#ffcc5c>Pak Joko yang baru datang langsung ikut pembicaraan</color> Apa yang terjadi Pak Dokter ramai sekali pasien disini, tidak biasanya seperti ini!#speaker:Pak Joko #portrait:headvillage #layout:right
+Apa yang terjadi Pak Dokter ramai sekali pasien disini, tidak biasanya seperti ini!#speaker:Pak Joko #portrait:headvillage #layout:right
 Wah halo Pak Joko, saya juga penasaran tadi saat sedang berjalan-jalan di sekitar desa kenapa banyak sekali pasien disini#speaker:Saras #portrait:saras #layout:left
 Wah ternyata ada Saras juga, jadi ada apa Pak Dokter?#speaker:Pak Joko #portrait:headvillage #layout:right
 Jadi apa yang terjadi Pak Dokter?#speaker:Pak Joko #portrait:headvillage #layout:right
