@@ -18,7 +18,7 @@ public class MapTrigger : MonoBehaviour
                 ItemDatabase.instance.SavePlayerPosition(playerPosition);
 
                 // Check if the item list count is at least 3 before loading the scene
-                if (ItemDatabase.instance.itemListDestroy.Count == 3)
+                if (ItemDatabase.instance.itemListDestroy.Count == 1)
                 {
                     // Use the serialized itemComplete if provided, otherwise use the default mapName
                     string sceneToLoad = string.IsNullOrEmpty(itemComplete) ? mapName : itemComplete;
