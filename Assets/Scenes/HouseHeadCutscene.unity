@@ -405,7 +405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1218833688}
   skipButton: {fileID: 1771121472}
-  sceneName: MainMenu
+  sceneName: MapMain
 --- !u!1 &1011496568
 GameObject:
   m_ObjectHideFlags: 0

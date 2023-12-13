@@ -12703,7 +12703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1398651808}
-  inkJSON: {fileID: 4900000, guid: 9fcc978cc107d2f40ad263f82ac139ba, type: 3}
+  inkJSON: {fileID: 4900000, guid: 8d1c2c42ee169f74ca9f4ebfde1d734a, type: 3}
 --- !u!61 &1818794620
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13141,7 +13141,7 @@ Transform:
   m_GameObject: {fileID: 2032990481}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.36, y: 1.52, z: 0.010521393}
+  m_LocalPosition: {x: 5.73, y: 2.37, z: 0.010521393}
   m_LocalScale: {x: 0.55240995, y: 0.55240995, z: 0.55240995}
   m_ConstrainProportionsScale: 0
   m_Children: []

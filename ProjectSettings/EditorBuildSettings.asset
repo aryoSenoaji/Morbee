@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HouseHeadVillage.unity
     guid: 309b07c11a55f924784d4a95c1763c43
   - enabled: 1
+    path: Assets/Scenes/HouseHeadCutscene.unity
+    guid: e758eb90b529d8c47812364921a16801
+  - enabled: 1
     path: Assets/Scenes/HouseClinic.unity
     guid: 28ee25e36a47fc54c9d8c4ec52f3122f
   - enabled: 1
