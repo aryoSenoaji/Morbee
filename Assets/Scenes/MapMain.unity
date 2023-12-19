@@ -5666,7 +5666,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u25CBBawa semua rempah kerumah nenek"
+  m_text: "\u25CBBawa semua rempah kerumah nenek\n\n\u25CBLalu bawa ramuan ke klinik"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a2151f06ab90154bb193f19eb2f8adc, type: 2}
   m_sharedMaterial: {fileID: 8516796070492931090, guid: 6a2151f06ab90154bb193f19eb2f8adc, type: 2}
